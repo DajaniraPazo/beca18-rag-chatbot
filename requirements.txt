@@ -1,0 +1,11 @@
+# Beca 18 RAG Chatbot — pinned dependencies
+# Install with: pip install -r requirements.txt
+
+pypdf==4.3.1
+tiktoken==0.8.0
+langchain-text-splitters==0.3.3
+google-genai==1.15.0
+chromadb==0.6.3
+ipywidgets==8.1.5
+tqdm==4.67.1
+python-dotenv==1.1.0
