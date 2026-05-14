@@ -1,4 +1,29 @@
-# Place beca18_reglamento.pdf here.
-# Download the official document from:
-# https://www.gob.pe/institucion/pronabec/normas-legales/7778068-033-2026-minedu-vmgi-pronabec
-# The notebook will also attempt to auto-download it.
+# =============================================================
+#  INSTRUCCIONES PARA EL EVALUADOR — DOCUMENTO FUENTE
+# =============================================================
+#
+#  Este directorio debe contener el PDF oficial de la normativa
+#  Beca 18 con el nombre exacto:
+#
+#      data/beca18_reglamento.pdf
+#
+#  PASOS PARA OBTENERLO:
+#  1. Abre el siguiente enlace en tu navegador:
+#     https://www.gob.pe/institucion/pronabec/normas-legales/7778068-033-2026-minedu-vmgi-pronabec
+#
+#  2. Descarga el archivo PDF principal:
+#     "RDE N.° 033-2026-MINEDU/VMGI-PRONABEC"
+#     (Resolución Directoral Ejecutiva + Anexos con las Bases
+#      del Concurso Beca 18 y Becas Especiales 2026)
+#
+#  3. Guárdalo en esta carpeta con el nombre:
+#     beca18_reglamento.pdf
+#
+#  ALTERNATIVA AUTOMÁTICA:
+#  El Paso 1 del notebook (beca18_rag_chatbot.ipynb) intenta
+#  descargar el PDF automáticamente desde el CDN de gob.pe.
+#  Si la descarga automática falla, sigue los pasos manuales.
+#
+#  NOTA: el archivo .pdf está excluido del repositorio via
+#  .gitignore (data/*.pdf) por razones de tamaño.
+# =============================================================

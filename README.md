@@ -1,19 +1,21 @@
 # Beca 18 RAG Chatbot — Normativa PRONABEC 2026
 
-Sistema de **Generación Aumentada por Recuperación (RAG)** que responde preguntas
-sobre la normativa oficial del programa Beca 18 (Resolución Directoral Ejecutiva
+## Proposito del proyecto
+
+Sistema de **Generacion Aumentada por Recuperacion (RAG)** que responde preguntas
+sobre la normativa oficial del programa Beca 18 (Resolucion Directoral Ejecutiva
 N.° 033-2026-MINEDU/VMGI-PRONABEC) recuperando fragmentos relevantes del PDF
-fuente e introduciéndolos como contexto en un modelo de lenguaje Gemini, sin
-depender del conocimiento paramétrico del modelo.
+fuente e introduciendolos como contexto en un modelo de lenguaje Gemini.
+El sistema responde **exclusivamente** desde el documento — no usa conocimiento
+parametrico del modelo — y rechaza preguntas ajenas al reglamento.
 
----
-
-## Documento fuente
+## Descripcion del documento fuente
 
 | Campo | Detalle |
 |---|---|
-| Título | RDE N.° 033-2026-MINEDU/VMGI-PRONABEC |
-| Institución | PRONABEC – Ministerio de Educación del Perú |
+| Titulo | RDE N.° 033-2026-MINEDU/VMGI-PRONABEC |
+| Contenido | Bases del Concurso Beca 18 y Becas Especiales Convocatoria 2026 |
+| Institucion | PRONABEC – Ministerio de Educacion del Peru |
 | URL | https://www.gob.pe/institucion/pronabec/normas-legales/7778068-033-2026-minedu-vmgi-pronabec |
 
 ---
@@ -126,15 +128,17 @@ Ejemplos de preguntas:
 ```
 beca18-rag-chatbot/
 ├── data/
-│   ├── .gitkeep                    # Placeholder — coloca aqui beca18_reglamento.pdf
-│   └── beca18_reglamento.pdf       # No versionado (.gitignore)
+│   ├── .gitkeep                    # Instrucciones para descargar el PDF
+│   └── beca18_reglamento.pdf       # No versionado (data/*.pdf en .gitignore)
 ├── notebooks/
 │   └── beca18_rag_chatbot.ipynb    # Notebook principal (Pasos 0-7)
+├── scripts/
+│   └── create_notebook.py          # Script auxiliar que genero el notebook
 ├── video/
 │   └── link.txt                    # Enlace al video explicativo
-├── .env.example                    # Plantilla de configuracion de clave API
-├── .gitignore
-├── requirements.txt
+├── .env.example                    # Plantilla para GEMINI_API_KEY
+├── .gitignore                      # Excluye .env, chroma_db_*/, data/*.pdf
+├── requirements.txt                # Dependencias con versiones fijadas
 └── README.md
 ```
 
