@@ -1,9 +1,1 @@
-Video URL: https://youtu.be/PENDING_UPLOAD
-
-# Instructions:
-# 1. Record a video covering:
-#    - Task 1: Raster image processing (reprojection, normalization, maps)
-#    - Task 2: RAG pipeline (chunking, embeddings, retrieval) + live chatbot demo
-# 2. Upload to YouTube (unlisted) or Google Drive
-# 3. Replace the URL above with the actual link
-# 4. Maximum duration: 5 minutes
+Video URL: https://drive.google.com/file/d/1fRoBRiaHAj8kmQO1KzEAS_n4_6ADedUp/view?usp=sharing
