@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Environment variables — never commit the real key
+.env
+
+# ChromaDB persistence directories (generated at runtime)
+chroma_db_*/
+
+# PDF source documents — too large for git, see README for download
+data/*.pdf
