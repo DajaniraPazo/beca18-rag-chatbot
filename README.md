@@ -1,5 +1,8 @@
 # Beca 18 RAG Chatbot — Normativa PRONABEC 2026
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://dajanirapazo-beca18-rag-chatbot-app-main.streamlit.app)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DajaniraPazo/beca18-rag-chatbot/blob/main/notebooks/beca18_rag_chatbot.ipynb)
+
 ## Proposito del proyecto
 
 Sistema de **Generacion Aumentada por Recuperacion (RAG)** que responde preguntas
@@ -133,9 +136,11 @@ beca18-rag-chatbot/
 ├── notebooks/
 │   └── beca18_rag_chatbot.ipynb    # Notebook principal (Pasos 0-7)
 ├── scripts/
-│   └── create_notebook.py          # Script auxiliar que genero el notebook
+│   ├── create_notebook.py          # Genero el notebook
+│   └── add_outputs.py              # Agrego outputs representativos
 ├── video/
 │   └── link.txt                    # Enlace al video explicativo
+├── app.py                          # Web app Streamlit (chatbot publico)
 ├── .env.example                    # Plantilla para GEMINI_API_KEY
 ├── .gitignore                      # Excluye .env, chroma_db_*/, data/*.pdf
 ├── requirements.txt                # Dependencias con versiones fijadas
@@ -144,8 +149,19 @@ beca18-rag-chatbot/
 
 ---
 
+## Demo en vivo
+
+La app esta desplegada en Streamlit Cloud:
+
+**https://dajanirapazo-beca18-rag-chatbot-app-main.streamlit.app**
+
+(Si la app esta dormida, espera ~30 segundos a que despierte; la primera carga
+del indice vectorial toma ~5 minutos.)
+
+---
+
 ## Seguridad
 
-- La clave API solo se carga desde `.env` via `python-dotenv`.
+- La clave API solo se carga desde `.env` (local) o Streamlit Secrets (cloud).
 - `.env` y `chroma_db_*/` estan excluidos del repositorio.
 - `data/*.pdf` tambien esta en `.gitignore`.

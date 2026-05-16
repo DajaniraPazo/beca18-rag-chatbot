@@ -1,5 +1,6 @@
 # Beca 18 RAG Chatbot — pinned dependencies
-# Install with: pip install -r requirements.txt
+# Notebook:  pip install -r requirements.txt
+# Web app:   same file (streamlit included)
 
 pypdf==4.3.1
 tiktoken==0.8.0
@@ -9,3 +10,5 @@ chromadb==0.6.3
 ipywidgets==8.1.5
 tqdm==4.67.1
 python-dotenv==1.1.0
+streamlit==1.45.1
+requests==2.32.3
